@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import IconAwesome from '../../UI/IconAwesome/IconAwesome';
 import Nav from '../Nav/Nav';
 import scss from './MobileNavigation.module.scss';
