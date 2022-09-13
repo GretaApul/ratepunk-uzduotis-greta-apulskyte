@@ -1,0 +1,24 @@
+main {
+
+    background-color: #F8CC5D;
+
+    .gridContainer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        padding: 0 1.6rem;
+        margin: 0 auto;
+        max-width: 90rem;
+        padding-top: 64px
+    }
+
+    @media screen and (max-width: 400px) {
+        .gridContainer {
+            grid-template-columns: 1fr;
+            max-width: 343px;
+
+        }
+    }
+
+}

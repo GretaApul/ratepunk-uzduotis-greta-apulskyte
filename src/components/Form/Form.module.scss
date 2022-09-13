@@ -1,0 +1,192 @@
+.formContainer {
+    color: #1F343E;
+    background-color: #F8F4F9;
+    padding: 64px;
+    border: 1px solid #1F343E;
+    border-radius: 16px;
+    max-width: 544px;
+    margin-bottom: 64px;
+
+    .title {
+        font-family: 'Caveat Brush', sans-serif;
+        font-size: 48px;
+        font-weight: 100;
+    }
+
+    .text {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+    }
+
+    .inputContainer {
+        max-width: 100%;
+        border: 1px solid #1F343E;
+        border-radius: 8px;
+        padding-left: 20px;
+        height: 64px;
+        margin-bottom: 16px;
+        background-color: #fff;
+        padding-top: 6px;
+    }
+
+
+    input {
+        border: none;
+        outline: none;
+        width: 80%;
+        padding: 20px;
+    }
+
+    input:active {
+        border: none;
+        outline: none;
+        font-size: 20px;
+
+    }
+
+    input::placeholder {
+        text-align: left;
+        font-size: 20px;
+        border: none;
+        box-shadow: none;
+    }
+
+    .error {
+        color: red;
+    }
+
+    button {
+        height: 64px;
+        color: white;
+        background-color: #4EB3E3;
+        width: 100%;
+        border: 1px solid #1F343E;
+        border-radius: 8px;
+        margin-bottom: 153px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .successBtn {
+        margin-bottom: 153px;
+
+    }
+
+    .formFooter {
+        color: #6D7A80;
+        font-size: 16px;
+    }
+
+    .successMessage {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 15px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .successMessage i {
+        color: #8CD943;
+        font-size: 32px;
+    }
+
+    .successBtn {
+        display: flex;
+        justify-content: flex-start;
+        height: 64px;
+        text-align: center;
+    }
+
+    .successBtn input {
+        flex-grow: 2;
+        border: 1px solid #1F343E;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-right: none;
+        color: #6D7A80;
+        font-size: 16px;
+    }
+
+    .successBtn button {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: 96px;
+
+    }
+
+
+    @media screen and (max-width: 800px) {
+        input::placeholder {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+
+
+        .title {
+            font-size: 32px;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 20px;
+
+        }
+
+        button {
+            margin-bottom: 72px;
+        }
+
+        .inputLogo {
+            height: 16px;
+        }
+
+        input {
+            padding: 5px;
+            padding-top: 18px;
+        }
+
+
+
+
+        .inputContainer {
+            margin-bottom: 0px;
+        }
+
+        .successBtn {
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .successBtn input {
+            border-right: #1F343E 1px solid;
+            border-radius: 8px;
+            width: 100%;
+            text-align: center;
+            padding: 16px;
+        }
+
+        .successBtn button {
+            width: 100%;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .formFooter {
+            // margin-top: 130px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .formContainer {
+        max-width: 343px;
+        padding: 16px;
+        margin: 0px;
+        height: 581px;
+    }
+}

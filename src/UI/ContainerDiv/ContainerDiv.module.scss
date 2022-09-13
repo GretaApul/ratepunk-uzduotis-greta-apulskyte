@@ -1,0 +1,13 @@
+@mixin flexDirection() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+}
+
+.container {
+    @include flexDirection();
+    padding: 0 1.6rem;
+    margin: 0 auto;
+    max-width: 90rem;
+}

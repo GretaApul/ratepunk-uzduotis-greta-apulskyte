@@ -1,0 +1,102 @@
+.gridContainer {
+    max-width: 544px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo1 text1"
+        "text2 logo2"
+        "logo3 text3"
+    ;
+
+    .step {
+        color: #4EB3E3;
+        font-size: 20px;
+        letter-spacing: 1.6px;
+    }
+
+    .title {
+        color: #1F343E;
+        font-size: 32px;
+        font-family: 'Caveat Brush', sans-serif;
+        font-weight: normal;
+    }
+
+    .text {
+        font-size: 20px;
+        font-weight: normal;
+        color: #1F343E;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+    }
+
+    .logo1,
+    .logo2,
+    .logo3 {
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+
+    .logo1 {
+        grid-area: logo1;
+    }
+
+    .logo2 {
+        grid-area: logo2;
+    }
+
+    .logo3 {
+        grid-area: logo3;
+    }
+
+    .textContainer1 {
+        grid-area: text1;
+    }
+
+    .textContainer2 {
+        grid-area: text2;
+    }
+
+    .textContainer3 {
+        grid-area: text3;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo1"
+            "text1"
+            "logo2"
+            "text2"
+            "logo3"
+            "text3"
+        ;
+        margin-top: -50px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .gridContainer {
+        margin-top: 50px;
+        text-align: center;
+        justify-items: center;
+
+        .logo1,
+        .logo2,
+        .logo3 {
+            padding-top: 0px;
+            padding-left: 0px;
+        }
+
+        .textContainer1,
+        .textContainer2,
+        .textContainer3 {
+            margin-bottom: 40px;
+        }
+
+    }
+}

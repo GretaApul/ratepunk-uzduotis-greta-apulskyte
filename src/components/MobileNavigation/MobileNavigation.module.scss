@@ -1,0 +1,28 @@
+.nav {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        align-items: center;
+        display: flex;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 10%;
+    }
+
+    .closeCross {
+        position: absolute;
+        right: 10%;
+        color: #1F343E;
+        font-size: 22px;
+    }
+
+    .hamburger:hover,
+    .closeCross:hover {
+        color: #4EB3E3;
+        cursor: pointer;
+    }
+}
