@@ -19,4 +19,10 @@
         color: #1F343E;
         font-size: 22px;
     }
+
+    .hamburger:hover,
+    .closeCross:hover {
+        color: #4EB3E3;
+        cursor: pointer;
+    }
 }
