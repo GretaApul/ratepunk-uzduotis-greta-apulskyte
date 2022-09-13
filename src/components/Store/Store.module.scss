@@ -5,7 +5,8 @@
     border: 1px solid #1F343E;
 
     .wrapper {
-        max-width: 100rem;
+        max-width: 90rem;
+        padding-top: 24px
     }
 
     .reviewContainer {
@@ -30,7 +31,7 @@
     }
 
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 400px) {
 
         .container {
             height: 280px;

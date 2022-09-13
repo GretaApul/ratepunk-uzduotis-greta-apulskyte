@@ -2,14 +2,18 @@ header {
     height: 80px;
     background: #FFFFFF;
     border: 1px solid #1F343E;
-
-    .hamburger {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 800px) {
-    .hamburger {
-        // display: contents;
+    header {
+
+        .wrapper {
+            padding-top: 24px
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
     }
+
 }

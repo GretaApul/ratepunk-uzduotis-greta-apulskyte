@@ -28,7 +28,7 @@ function Footer() {
           <div className={scss.contactContainer}>
             <h3>CONTACT</h3>
             <div className={scss.flex}>
-              <IconAwesome iconName={'envelope'} />
+              <IconAwesome iconName={'envelope-o'} />
               <p>hi@ratepunk.com</p>
             </div>
           </div>

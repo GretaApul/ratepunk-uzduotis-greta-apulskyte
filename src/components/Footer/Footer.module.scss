@@ -12,7 +12,7 @@ footer {
     color: #1F343E;
 
     .gridContainer {
-        max-width: 100rem;
+        max-width: 90rem;
         margin: 0 auto;
         padding: 64px 20px;
         display: grid;
@@ -57,6 +57,18 @@ footer {
         align-items: center;
         gap: 16px;
         margin-bottom: 50px;
+    }
+
+
+    .linksContainer li:hover,
+    .flex p:hover {
+        color: #4EB3E3;
+        cursor: pointer;
+    }
+
+    .iconsContainer i:hover {
+        background-color: #F8CC5D;
+        cursor: pointer;
     }
 
     .facebook {
@@ -107,7 +119,7 @@ footer {
     }
 
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 400px) {
         .gridContainer {
             grid-template-columns: 1fr;
         }
@@ -136,5 +148,7 @@ footer {
             margin-bottom: -40px;
 
         }
+
+
     }
 }
