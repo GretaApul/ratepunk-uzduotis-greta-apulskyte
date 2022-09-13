@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import scss from './StoreItem.module.scss';
 
 function StoreItem({ logoLink, logoName, storeName, storeLink }) {

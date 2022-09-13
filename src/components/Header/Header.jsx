@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import scss from './Header.module.scss';
 import ContainerDiv from '../../UI/ContainerDiv/ContainerDiv';
-import IconAwesome from '../../UI/IconAwesome/IconAwesome';
 import Navigation from '../Navigation/Navigation';
 import MobileNavigation from '../MobileNavigation/MobileNavigation';
 // import Navigation from '../Navigation/Navigation';
