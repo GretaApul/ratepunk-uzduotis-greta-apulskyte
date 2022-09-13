@@ -1,0 +1,44 @@
+@mixin flex($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+
+}
+
+.headerMenu {
+
+    @include flex(center, center);
+    gap: 52px;
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.menuLink {
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #434A54;
+}
+
+.menuLink:hover {
+    color: #4EB3E3;
+}
+
+
+@media screen and (max-width: 800px) {
+    .headerMenu {
+        @include flex(flex-start, flex-start);
+        height: 234px;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        gap: 10px;
+        right: 0.1px;
+        top: 63px;
+        width: 100%;
+        border: 1px solid #1F343E;
+        border-top: white 1px solid;
+    }
+
+
+}

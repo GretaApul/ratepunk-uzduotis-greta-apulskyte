@@ -22,7 +22,7 @@ function Form() {
           />
         </div>
         <br />
-        <button>Get Referral Link</button>
+        <button type="submit">Get Referral Link</button>
       </form>
       <p className={scss.formFooter}>Limits on max rewards apply.</p>
     </div>

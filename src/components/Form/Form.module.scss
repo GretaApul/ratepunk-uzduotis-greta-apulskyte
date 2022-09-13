@@ -23,7 +23,6 @@
         max-width: 100%;
         border: 1px solid #1F343E;
         border-radius: 8px;
-        // padding-top: 20px;
         padding-left: 20px;
         height: 64px;
         margin-bottom: 16px;
@@ -34,8 +33,15 @@
 
     input {
         border: none;
+        outline: none;
         width: 80%;
         padding: 20px;
+    }
+
+    input:active {
+        border: none;
+        outline: none;
+        font-size: 20px;
 
     }
 
@@ -63,12 +69,46 @@
         font-size: 16px;
     }
 
-    ul {
-        line: 16px;
+
+    @media screen and (max-width: 800px) {
+        input::placeholder {
+            font-size: 16px;
+        }
     }
+
+    @media screen and (max-width: 400px) {
+
+
+        .title {
+            font-size: 32px;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 20px;
+
+        }
+
+        button {
+            margin-bottom: 72px;
+        }
+
+        .inputLogo {
+            height: 16px;
+        }
+
+        input {
+            padding: 5px;
+            padding-top: 18px;
+        }
+
+
+    }
+
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
+
     .formContainer {
         max-width: 343px;
         padding: 16px;

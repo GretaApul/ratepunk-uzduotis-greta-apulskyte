@@ -11,11 +11,15 @@ function Store() {
           logoLink={'/assets/Chrome Icon.svg'}
           logoName={'Chrome Store Icon'}
           storeName={'chrome web store'}
+          storeLink={
+            'https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk'
+          }
         />
         <StoreItem
           logoLink={'/assets/Apple Store Icon.svg'}
           logoName={'Apple Store Icon'}
           storeName={'apple app store'}
+          storeLink={'https://apps.apple.com/app/ratepunk/id1607823726'}
         />
         <div className={scss.reviewContainer}>
           <div className={scss.icons}>

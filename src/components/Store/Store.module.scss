@@ -6,6 +6,7 @@
 
     .wrapper {
         max-width: 100rem;
+        padding-top: 24px
     }
 
     .reviewContainer {
@@ -30,7 +31,7 @@
     }
 
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 400px) {
 
         .container {
             height: 280px;

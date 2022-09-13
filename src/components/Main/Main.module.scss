@@ -13,7 +13,7 @@ main {
         padding-top: 64px
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 400px) {
         .gridContainer {
             grid-template-columns: 1fr;
             max-width: 343px;

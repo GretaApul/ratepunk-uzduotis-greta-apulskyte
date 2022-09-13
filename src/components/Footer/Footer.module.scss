@@ -59,6 +59,18 @@ footer {
         margin-bottom: 50px;
     }
 
+
+    .linksContainer li:hover,
+    .flex p:hover {
+        color: #4EB3E3;
+        cursor: pointer;
+    }
+
+    .iconsContainer i:hover {
+        background-color: #F8CC5D;
+        cursor: pointer;
+    }
+
     .facebook {
         @include iconStyle();
         padding: 8px 11px;
@@ -107,7 +119,7 @@ footer {
     }
 
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 400px) {
         .gridContainer {
             grid-template-columns: 1fr;
         }
@@ -136,5 +148,7 @@ footer {
             margin-bottom: -40px;
 
         }
+
+
     }
 }
