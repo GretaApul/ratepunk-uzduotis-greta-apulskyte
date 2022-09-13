@@ -1,0 +1,140 @@
+@mixin iconStyle() {
+    background: #4EB3E3 0% 0% no-repeat padding-box;
+    border: 1px solid #1F343E;
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-right: 8px;
+}
+
+footer {
+    background-color: #F8F4F9;
+    border: 1px solid #1F343E;
+    color: #1F343E;
+
+    .gridContainer {
+        max-width: 100rem;
+        margin: 0 auto;
+        padding: 64px 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 120;
+    }
+
+    .text {
+        font-size: 16px;
+        padding-bottom: 70px;
+    }
+
+    .trademark {
+        color: #6D7A80;
+        margin-top: -40px;
+    }
+
+    .textContainer {
+        max-width: 544px;
+    }
+
+    h4 {
+        letter-spacing: 1.6px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    ul {
+        padding-left: 0px;
+
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 35px;
+        list-style-type: none;
+
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 50px;
+    }
+
+    .facebook {
+        @include iconStyle();
+        padding: 8px 11px;
+    }
+
+    .tumblr {
+        @include iconStyle();
+        padding: 8px 11px;
+    }
+
+    .instagram {
+        @include iconStyle();
+        padding: 8px;
+    }
+
+    .linkedin {
+        @include iconStyle();
+        padding: 8px;
+    }
+
+    .twitter {
+        @include iconStyle();
+        padding: 8px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .gridContainer {
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contactSocialContainer {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        img {
+            padding-top: 15px;
+        }
+
+        .trademark {
+            padding: 0;
+            margin-top: 100px;
+        }
+    }
+
+
+    @media screen and (max-width: 375px) {
+        .gridContainer {
+            grid-template-columns: 1fr;
+        }
+
+        .text {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+
+        }
+
+        .contactSocialContainer {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .flex {
+            margin: 0px;
+            margin-bottom: -40px;
+        }
+
+        .trademark {
+            margin-top: 10px;
+        }
+
+        .linksContainer {
+            margin-bottom: -40px;
+
+        }
+    }
+}
