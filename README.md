@@ -10,7 +10,8 @@ With this app you can register your email for a referral.
 ### 🔨 Configure files
 
 Rename `.env.example` to `.env` and put your credentials in it.
-(For this project I also created the back-end - github link here - https://github.com/GretaApul/ratepunk-backend .
+API used - JSONBIN
+(For this project I also created specific back-end with mySQL, Node.js(Express.js) - github link here - https://github.com/GretaApul/ratepunk-backend )
 <br />
 
 ### 🎈 Start the project
@@ -29,8 +30,9 @@ npm start
 
 # 🔧 Technologies Used
 
-- React
-- SCSS Modules
+- React,
+- SCSS Modules,
+- JSONBIN
 
 ### 📦 Additionally installed packages
 

@@ -1,10 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import scss from './Form.module.scss';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import IconAwesome from '../../UI/IconAwesome/IconAwesome';
-
-// x-master-key- $2b$10$x7VhMTbP.rcD5sbVd.oT4uvK/fkTketWG1EfmL0CTQ/Rq2t159ep.
 
 const initEmailValue = {
   email: '',
@@ -33,17 +32,9 @@ function Form() {
         },
         body: JSON.stringify(newEmail),
       });
-      console.log('resp', resp);
-      console.log('resp.ok', resp.ok);
-      console.log('resp.status', resp.status);
+
       resp.ok ? setEmailSubmitted(true) : setErrorMsg(true);
       const result = await resp.json();
-      console.log('reslut', result);
-      console.log('errorMsg', errorMsg);
-      console.log('emailSubmitted', emailSubmitted);
-      // if (resp.ok) {
-      // } else if (resp.ok === false) {
-      // }
     },
   });
 
