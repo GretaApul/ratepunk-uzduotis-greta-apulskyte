@@ -1,0 +1,48 @@
+.container {
+    color: #F8F4F9;
+    height: 144px;
+    background: #45565E 0% 0% no-repeat padding-box;
+    border: 1px solid #1F343E;
+
+    .wrapper {
+        max-width: 100rem;
+    }
+
+    .reviewContainer {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 20px;
+    }
+
+    .star {
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .container {
+        height: 280px;
+    }
+
+
+    @media screen and (max-width: 375px) {
+
+        .container {
+            height: 280px;
+
+            .reviewContainer {
+                gap: 5px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+    }
+}
